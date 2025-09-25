@@ -52,20 +52,16 @@ class tablaPersona {
     public function setDomicilio($dom){
         $this->domicilio = $dom;
     }
-    public function selecionarPersona($dni){
+
+    public function selecionarPersonas(){
         $bd = new BaseDatos();
         $resp = null;
-        $dni = addslashes($dni);
-
-        $sql = "SELECT * FROM persona WHERE NroDni = '$dni'";
+        $sql = "SELECT * FROM persona";
         $resulBusq = $bd->query($sql);
-
-        if (!$resulBusq) {
-            echo "<p>Error en la consulta.</p>"; 
-        } else {
-            $resp = $resulBusq->fetchAll(PDO::FETCH_ASSOC); 
+        if($resulBusq) {
+            $resp = $resulBusq->fetchAll(PDO::FETCH_ASSOC);
         }
-        return $resp;  
+        return $resp;
     }
     public function insertarPersona(){
         $bd = new baseDatos();

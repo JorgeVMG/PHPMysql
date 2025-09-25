@@ -44,16 +44,13 @@ class tablaAuto {
     public function setDniDuenio($dniDuen) {
         $this->dniDuenio = $dniDuen;
     }
-    public function selecionarAuto($patent){
+    public function selecionarAuto(){
         $bd = new BaseDatos();
         $resp = null;
-        $sql = "SELECT * FROM auto WHERE Patente = '$patent'";
+        $sql = "SELECT * FROM auto";
         $resulBusq = $bd->query($sql);
-
-        if (!$resulBusq) {
-            echo "<p>Error en la consulta.</p>"; 
-        } else {
-            $resp = $resulBusq->fetchAll(PDO::FETCH_ASSOC); 
+        if($resulBusq) {
+            $resp = $resulBusq->fetchAll(PDO::FETCH_ASSOC);
         }
         return $resp;  
     }
