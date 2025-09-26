@@ -1,10 +1,9 @@
 <?php
-include_once __DIR__ . "/../../modelo/tablaAuto.php";
+include_once __DIR__ . "/../modelo/tablaAuto.php";
 include_once __DIR__ . "/controlPersona.php";
 class controlAuto{
     public function buscarAuto($patente){
-        $a = new tablaAuto("", "", "", "");
-        $list = $a->selecionarAuto();
+        $list = $this->listarAutos();
         $autoElegido= null;
         foreach ($list as $aut){
             if($aut["Patente"] == $patente){

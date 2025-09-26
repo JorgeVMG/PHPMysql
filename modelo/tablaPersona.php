@@ -35,7 +35,7 @@ class tablaPersona {
         $this->nombre = $nom;
     }
     public function getFechaNacimiento(){
-        return $this->fechaNacimiento;
+        return $this->fechaNac;
     }
     public function setFechaNacimiento($fechNa){
         $this->fechaNac = $fechNa;
@@ -66,11 +66,11 @@ class tablaPersona {
     public function insertarPersona(){
         $bd = new baseDatos();
         $resp = false;
-        $resulBusq = $bd->query("SELECT COUNT(*) FROM persona WHERE NroDni = $this->nroDNI");
+        $resulBusq = $bd->query("SELECT COUNT(*) FROM persona WHERE NroDni = '".$this->getNroDNI()."'");
         $cant = $resulBusq->fetchColumn();
         if($cant == 0){
             $sql = "INSERT INTO persona (NroDni, Apellido, Nombre, fechaNac, Telefono, Domicilio)
-            VALUES ('$this->nroDNI','$this->apellido','$this->nombre','$this->fechaNac','$this->telefono','$this->domicilio')";
+            VALUES ('".$this->getNroDNI()."','".$this->getApellido()."','".$this->getNombre()."','".$this->getFechaNacimiento()."','".$this->getTelefono()."','".$this->getDomicilio()."')";
             if($bd->query($sql)){
                 $resp = true;
             }

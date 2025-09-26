@@ -1,6 +1,7 @@
 <?php 
-include "../controlTablas/controlAuto.php";
-include "../controlTablas/controlPersona.php";
+include_once __DIR__ . '/../control/controlAuto.php';
+include_once __DIR__ . '/../control/controlPersona.php';
+
 function mensajeListado(){
     $control = new controlAuto(); 
     $list = $control->listarAutos();

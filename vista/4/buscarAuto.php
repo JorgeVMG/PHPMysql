@@ -2,8 +2,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6 mt-3 pb-3 border border-dark" >
-                <form class="needs-validation" novalidate action="../../action/formAccion.php" method="post">
-                    <input type="hidden" name="ejercicio" value="1">
+                <form class="needs-validation" novalidate action="../../action/accionBuscarAuto.php" method="post">
                     <div class="mb-4">
                         <h1 class="h4 mb-0 text-center" >Ingresar patente a buscar</h1>
                     </div>
