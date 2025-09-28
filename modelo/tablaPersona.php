@@ -77,10 +77,10 @@ class tablaPersona {
         }
         return $resp;
     }
-    public function modificarPersona($dni, $apel, $nom, $fechNac, $tele, $dom){
+    public function modificarPersona($dni,$apel, $nom, $fechNac, $tele, $dom){
         $bd = new BaseDatos();
         $resp = false;
-        $sql = "UPDATE persona SET Apellido = '$apel', Nombre = '$nom', fechaNac = '$fechNac', Telefono = '$tele', Domicilio = '$dom' WHERE NroDni = '$dni';";
+        $sql = "UPDATE persona SET Apellido = '$apel', Nombre = '$nom', fechaNac = '$fechNac', Telefono = '$tele', Domicilio = '$dom' WHERE NroDni = '".$dni."';";
         $stmt = $bd->query($sql);
         if($stmt){
             $resp = true;

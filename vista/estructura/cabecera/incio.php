@@ -8,4 +8,4 @@
     <script src="/PHPMYSQL/vista/css/booststrap/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-    
+    <?php include "../estructura/cabecera/barraNavegacion.php";

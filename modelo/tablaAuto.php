@@ -69,10 +69,10 @@ class tablaAuto {
         }
         return $resp;
     }
-    public function modificarAuto($patent, $marc, $modl, $dniDuen){
+    public function modificarAuto(){
         $bd = new BaseDatos();
         $resp = false;
-        $sql = "UPDATE auto SET Marca = '$marc', Modelo = '$modl', DniDuenio = '$dniDuen' WHERE Patente = '$patent';";
+        $sql = "UPDATE auto SET Marca = '".$this->getMarca()."', Modelo = '".$this->getModelo()."', DniDuenio = '".$this->getDniDuenio()."' WHERE Patente = '".$this->getPatente()."';";
         $stmt = $bd->query($sql);
         if($stmt){
             $resp = true;

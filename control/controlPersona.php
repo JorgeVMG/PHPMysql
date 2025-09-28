@@ -35,4 +35,9 @@ class controlPersona{
         }
         return $autosPersona;
     }
+    public function modificarPer($dni,$apel, $nom, $fechNac, $tele, $dom){
+        $p = new tablaPersona("","","","","","");
+        $modi = $p->modificarPersona($dni,$apel, $nom, $fechNac, $tele, $dom);
+        return $modi;
+    }
 }
