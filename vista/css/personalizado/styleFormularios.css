@@ -1,0 +1,109 @@
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#form form{
+    border-radius: 20px ;
+    padding: 15px;
+    text-align: center;
+    border: solid;
+    border-color: black;
+}
+.cuadros, .cuadros2{
+    width: 100%;
+    
+}
+.cuadros3{
+    display: flex;               
+    justify-content: space-between; 
+    align-items: center;       
+    width: 45%;                 
+    padding: 10px;
+    box-sizing: border-box;      
+    margin-bottom: 10px; 
+}
+.cuadros3 label{
+    margin-right: 10px;         
+    flex: 1;   
+    margin-left: 4px; 
+}
+.cuadros3 input{
+    flex: 2;
+}
+
+.cuadros label{
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+.cuadros2 label{
+    font-size: 20px;
+    width: 40%;
+}
+.cuadros label{
+    font-size: 29px;
+    color: rgb(0, 0, 0);
+}
+.cuadros p{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
+.cuadros input{
+    width: 50%;
+    height: 20px;
+    margin: 7px;
+}
+.cuadros select{
+    border : solid rgb(41, 41, 159) 2px;
+    background: rgb(137, 220, 238);
+    width: 70%;
+    height: 30px;
+}
+.cuadros input[name="submit"]{
+    margin-top: 12px;
+    padding-bottom: 20px ;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: solid ;
+    border-color: rgb(54, 154, 54);
+    background-color: rgb(120, 227, 120);
+}
+.cuadros input[name="submit"]:hover{
+    
+    border-color: rgb(39, 121, 20);
+    background-color: rgb(28, 156, 28);
+}
+.secundarios{
+    width: 100%;
+}
+.secundarios #submit{
+    margin-top: 12px;
+    padding-bottom: 20px ;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: solid rgb(54, 154, 54) 2px;
+    background-color: rgb(120, 227, 120);
+}
+.secundarios #submit:hover{
+    border-color: rgb(39, 121, 20);
+    background-color: rgb(28, 156, 28);
+}
+.secundarios #borrar{
+    margin-top: 12px;
+    padding-bottom: 20px ;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: solid rgb(79, 14, 14) 2px;
+    background-color: rgb(231, 105, 105);
+}
+.secundarios #borrar:hover{
+    border-color: rgb(69, 29, 29);
+    background-color: rgb(137, 23, 23);
+}

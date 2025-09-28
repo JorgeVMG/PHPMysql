@@ -6,6 +6,8 @@
     <title>Formularios </title>
     <link rel="stylesheet" href="/PHPMYSQL/vista/css/booststrap/bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <script src="/PHPMYSQL/vista/css/booststrap/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/PHPMYSQL/vista/css/personalizado/styleFormularios.css">
+    <link rel="stylesheet" href="/PHPMYSQL/vista/css/personalizado/styleMensaje.css">
 </head>
 <body>
     <?php include "../estructura/cabecera/barraNavegacion.php";

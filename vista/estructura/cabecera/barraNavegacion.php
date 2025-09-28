@@ -23,7 +23,7 @@
 <nav class="navbar navbar-expand-lg navbar-custom mb-4">
     <div class="container-fluid">
         <!-- Logo -->
-        <a class="navbar-brand fw-bold" href="/PWD/vista/home/home.php">Formularios</a>
+        <a class="navbar-brand fw-bold" href="/PHPMYSQL/vista/home/home.php">Formularios</a>
         
         <!-- Botón toggle para móvil -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -41,15 +41,15 @@
                         TP1
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/PWD/vista/1/formulario1.php">Ejercicio 1</a></li>
-                        <li><a class="dropdown-item" href="/PWD/vista/1/formulario2.php">Ejercicio 2</a></li>
-                        <li><a class="dropdown-item" href="/PWD/vista/1/formulario3Get.php">Ejercicio 3 Get</a></li>
-                        <li><a class="dropdown-item" href="/PWD/vista/1/formulario3Post.php">Ejercicio 3 Post</a></li>
-                        <li><a class="dropdown-item" href="/PWD/vista/1/formulario4.php">Ejercicio 4</a></li>
-                        <li><a class="dropdown-item" href="/PWD/vista/1/formulario5.php">Ejercicio 5</a></li>
-                        <li><a class="dropdown-item" href="/PWD/vista/1/formulario6.php">Ejercicio 6</a></li>
-                        <li><a class="dropdown-item" href="/PWD/vista/1/formulario7.php">Ejercicio 7</a></li>
-                        <li><a class="dropdown-item" href="/PWD/vista/1/formulario8.php">Ejercicio 8</a></li>
+                        <li><a class="dropdown-item" href="/PHPMYSQL/vista/1/formulario1.php">Ejercicio 1</a></li>
+                        <li><a class="dropdown-item" href="/PHPMYSQL/vista/1/formulario2.php">Ejercicio 2</a></li>
+                        <li><a class="dropdown-item" href="/PHPMYSQL/vista/1/formulario3Get.php">Ejercicio 3 Get</a></li>
+                        <li><a class="dropdown-item" href="/PHPMYSQL/vista/1/formulario3Post.php">Ejercicio 3 Post</a></li>
+                        <li><a class="dropdown-item" href="/PHPMYSQL/vista/1/formulario4.php">Ejercicio 4</a></li>
+                        <li><a class="dropdown-item" href="/PHPMYSQL/vista/1/formulario5.php">Ejercicio 5</a></li>
+                        <li><a class="dropdown-item" href="/PHPMYSQL/vista/1/formulario6.php">Ejercicio 6</a></li>
+                        <li><a class="dropdown-item" href="/PHPMYSQL/vista/1/formulario7.php">Ejercicio 7</a></li>
+                        <li><a class="dropdown-item" href="/PHPMYSQL/vista/1/formulario8.php">Ejercicio 8</a></li>
                     </ul>
                 </li>
 
@@ -59,9 +59,9 @@
                         TP2
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/PWD/vista/2/formulario1.php">Ejercicio 1</a></li>
-                        <li><a class="dropdown-item" href="/PWD/vista/2/formulario3.php">Ejercicio 3</a></li>
-                        <li><a class="dropdown-item" href="/PWD/vista/2/formulario4.php">Ejercicio 4</a></li>
+                        <li><a class="dropdown-item" href="/PHPMYSQL/vista/2/formulario1.php">Ejercicio 1</a></li>
+                        <li><a class="dropdown-item" href="/PHPMYSQL/vista/2/formulario3.php">Ejercicio 3</a></li>
+                        <li><a class="dropdown-item" href="/PHPMYSQL/vista/2/formulario4.php">Ejercicio 4</a></li>
                     </ul>
                 </li>
 
@@ -71,9 +71,9 @@
                         TP3
                     </a>
                     <ul class="dropdown-menu tp3-menu">
-                        <li><a class="dropdown-item" href="/PWD/vista/3/formulario1.php">Ejercicio 1</a></li>
-                        <li><a class="dropdown-item" href="/PWD/vista/3/formulario2.php">Ejercicio 2</a></li>
-                        <li><a class="dropdown-item" href="/PWD/vista/3/formulario3.php">Ejercicio 3</a></li>
+                        <li><a class="dropdown-item" href="/PHPMYSQL/vista/3/formulario1.php">Ejercicio 1</a></li>
+                        <li><a class="dropdown-item" href="/PHPMYSQL/vista/3/formulario2.php">Ejercicio 2</a></li>
+                        <li><a class="dropdown-item" href="/PHPMYSQL/vista/3/formulario3.php">Ejercicio 3</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">

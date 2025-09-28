@@ -1,0 +1,31 @@
+.presentacion{
+     margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.presentacion h2{
+    color: rgb(20, 20, 146);
+}
+.respuesta{
+    border-radius: 20px ;
+    padding: 15px;
+    text-align: center;
+    border: solid;
+    border-color: black;
+}
+.presentacion input[type="button"]{
+    padding-bottom: 20px ;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: solid ;
+    border-color: rgb(61, 61, 61);
+    background-color: rgb(200, 206, 200);
+}
+.presentacion input[type="button"]:hover{
+    border-color: rgb(33, 33, 33);
+    background-color: rgb(93, 94, 93);
+    color: white;
+}
