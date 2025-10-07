@@ -1,5 +1,5 @@
 <?php include "../estructura/cabecera/incio.php"; ?>
-    <form class="row g-3 needs-validation" novalidate action="../action/action.php" method="post">
+    <form class="row g-3 needs-validation" novalidate action="../../control/action/action.php" method="post">
         <div class="col-md-4">
             <input type="hidden" name="tp" value="TP2">
             <input type="hidden" name="ejercicio" value="1">

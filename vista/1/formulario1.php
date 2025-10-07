@@ -1,7 +1,7 @@
 <?php include "../estructura/cabecera/incio.php"; ?>
 
 <div id="form">
-  <form id="formulario" name="form" method="post" action="../action/action.php">
+  <form id="formulario" name="form" method="post" action="../../control/action/action.php">
     <input type="hidden" name="tp" value="TP1">
     <input type="hidden" name="ejercicio" value="1">
     <h2>Ingresar un Numero</h2>

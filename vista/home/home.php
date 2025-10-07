@@ -97,6 +97,40 @@
                             </div>
                         </div>
                     </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                TP4
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body p-0">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item list-group-item-action">
+                                        <a href="/PHPMYSQL/vista/4/verAuto.php" class="text-decoration-none d-block">Ejercicio 1</a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action">
+                                        <a href="/PHPMYSQL/vista/4/buscarAuto.php" class="text-decoration-none d-block">Ejercicio 2</a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action">
+                                        <a href="/PHPMYSQL/vista/4/listarPersonas.php" class="text-decoration-none d-block">Ejercicio 3</a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action">
+                                        <a href="/PHPMYSQL/vista/4/nuevaPersona.php" class="text-decoration-none d-block">Ejercicio 4</a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action">
+                                        <a href="/PHPMYSQL/vista/4/NuevoAuto.php" class="text-decoration-none d-block">Ejercicio 5</a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action">
+                                        <a href="/PHPMYSQL/vista/4/CambioDuenio.php" class="text-decoration-none d-block">Ejercicio 6</a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action">
+                                        <a href="/PHPMYSQL/vista/4/BuscarPersona.html" class="text-decoration-none d-block">Ejercicio 7</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

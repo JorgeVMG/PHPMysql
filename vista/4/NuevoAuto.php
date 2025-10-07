@@ -5,8 +5,10 @@
             <div class="card shadow-sm">
                 <div class="card-body">
                     <h1 class="h4 text-center mb-4">Ingresar los Datos del Nuevo Auto</h1>
-                    <form class="needs-validation" novalidate action="../../action/accionNuevoAuto.php" method="post">
+                    <form class="needs-validation" novalidate action="../../control/action/action.php" method="post">
                         <div class="row mb-3">
+                            <input type="hidden" name="tp" value="TP4">
+                            <input type="hidden" name="ejercicio" value="5">
                             <div class="col-md-6 mb-3">
                                 <label for="patente" class="form-label">Patente</label>
                                 <input type="text" class="form-control" name="patente" id="patente" required>
@@ -29,8 +31,8 @@
                                 <div class="invalid-feedback">Ingrese el modelo del vehiculo.</div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="dniDuenio" class="form-label">DNI del Dueño</label>
-                                <input type="text" class="form-control" name="dniDuenio" id="dniDuenio" required>
+                                <label for="DNI" class="form-label">DNI del Dueño</label>
+                                <input type="text" class="form-control" name="DNI" id="DNI" required>
                                 <div class="valid-feedback">¡Correcto!</div>
                                 <div class="invalid-feedback">Ingrese el DNI del dueño.</div>
                             </div>

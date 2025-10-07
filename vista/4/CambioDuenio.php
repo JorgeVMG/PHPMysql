@@ -5,8 +5,10 @@
             <div class="card shadow-sm">
                 <div class="card-body">
                     <h1 class="h4 text-center mb-4">Ingresar los Datos para el cambio de dueño</h1>
-                    <form class="needs-validation" novalidate action="../../action/accionCambioDuenio.php" method="post">
+                    <form class="needs-validation" novalidate action="../../control/action/action.php" method="post">
                         <div class="row mb-3">
+                            <input type="hidden" name="tp" value="TP4">
+                            <input type="hidden" name="ejercicio" value="6">
                             <div class="col-md-6 mb-3">
                                 <label for="patente" class="form-label">Patente del vehiculo</label>
                                 <input type="text" class="form-control" name="patente" id="patente" required>
@@ -14,8 +16,8 @@
                                 <div class="invalid-feedback">Ingrese la patente.</div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="dniDuenioNuevo" class="form-label">DNi del nuevo dueño</label>
-                                <input type="text" class="form-control" name="dniDuenioNuevo" id="dniDuenioNuevo" required>
+                                <label for="DNI" class="form-label">DNi del nuevo dueño</label>
+                                <input type="text" class="form-control" name="DNI" id="DNI" required>
                                 <div class="valid-feedback">¡Correcto!</div>
                                 <div class="invalid-feedback">Ingrese la Marca del vehiculo.</div>
                             </div>

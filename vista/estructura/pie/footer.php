@@ -1,22 +1,7 @@
-    <script>
-        (() => {
-            'use strict'
-            let forms = document.querySelectorAll('.needs-validation')
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-
-                    form.classList.add('was-validated')
-                }, false)
-            })
-        })()
-    </script>
-    <!--    <script src="../js/1/validacionFormularioTP1.js"></script>
+    <script src="../js/1/validacionFormularioTP1.js"></script>
     <script src="../js/2/validacionFormularioTP2.js"></script>
     <script src="../js/3/validacionFormularioTP3.js"></script>
+    <script src="../js/4/validacionFormularioTP4.js"></script>
     <script>
             let tpInput = document.getElementsByName('tp')[0];
             let tp = tpInput.value;
@@ -41,7 +26,7 @@
                     })
                 })()
                
-            }else{
+            }else if(tp === 'TP3'){
                 (() => {
                     'use strict'
                     let forms = document.querySelectorAll('.needs-validation')
@@ -54,8 +39,18 @@
                         }, false)
                     })
                 })()
+            }else{
+                (() => {
+                    'use strict'
+                    let forms = document.querySelectorAll('.needs-validation')
+                    Array.from(forms).forEach(form => {
+                        form.addEventListener('submit', event => {
+                            validFormul(event);
+                        }, false)
+                    })
+                })()
             }
         
-    </script>-->
+    </script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php include "../estructura/cabecera/incio.php"; ?>
     <div class="container">
-        <form action="../action/action.php" novalidate class="row g-3 needs-validation" id="form4" method="post" enctype="multipart/form-data">
+        <form action="../../control/action/action.php" novalidate class="row g-3 needs-validation" id="form4" method="post" enctype="multipart/form-data">
             <div class="col-6">
                 <input type="hidden" name="tp" value="TP3">
                 <input type="hidden" name="ejercicio" value="3">

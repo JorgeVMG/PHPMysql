@@ -5,7 +5,7 @@ function cambioDuenio(){
     $method = $_SERVER['REQUEST_METHOD'];
     $data   = $method === 'POST' ? $_POST : $_GET;
     $patente = $data["patente"];
-    $duenioNuevo = $data["dniDuenioNuevo"];
+    $duenioNuevo = $data["DNI"];
     $p = new controlPersona();
     $a = new controlAuto();
     $autoEncont = $a->buscarAuto($patente);

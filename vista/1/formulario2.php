@@ -1,6 +1,6 @@
 <?php include "../estructura/cabecera/incio.php"; ?>
 <div id="form" class="form2">
-    <form id="formulario" name="form" method="get" action="../action/action.php">
+    <form id="formulario" name="form" method="get" action="../../control/action/action.php">
         <input type="hidden" name="tp" value="TP1">
         <input type="hidden" name="ejercicio" value="2">
         <h2>ingresar horas de clases</h2>

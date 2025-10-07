@@ -11,8 +11,10 @@
             <div class="card shadow-sm">
                 <div class="card-body">
                     <h1 class="h4 text-center mb-4">Ingresar Datos de la Nueva Persona</h1>
-                    <form class="needs-validation" novalidate action="../../action/accionNuevaPersona.php" method="post">
+                    <form class="needs-validation" novalidate action="../../control/action/action.php" method="post">
                         <div class="row mb-3">
+                            <input type="hidden" name="tp" value="TP4">
+                            <input type="hidden" name="ejercicio" value="4">
                             <div class="col-md-6 mb-3">
                                 <label for="nombre" class="form-label">Nombre</label>
                                 <input type="text" class="form-control" name="nombre" id="nombre" required>

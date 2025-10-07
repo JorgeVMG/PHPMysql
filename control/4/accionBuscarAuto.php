@@ -1,6 +1,6 @@
 <?php
-include_once __DIR__ . '/../control/controlAuto.php';
-include_once __DIR__ . '/../control/controlPersona.php';
+include_once 'controlAuto.php';
+include_once 'controlPersona.php';
 
 function mostrarAutoElegido (){
     $method = $_SERVER['REQUEST_METHOD'];
@@ -14,13 +14,16 @@ function mostrarAutoElegido (){
 
     if($list != null){
         foreach ($list as $aut){
-            if($data["ingresoPatente"]==$aut["Patente"]){
+            if($data["patente"]==$aut["Patente"]){
                 $autoElegido = $aut;
             }
         }
         if($autoElegido != null){
             $duenio = $p->buscarPersona($autoElegido["DniDuenio"]);
-            $mesansaje = "<div class='card-body text-success'>
+            $mesansaje = "<div class='card-header text-success'>
+                            <h1 class='h4 mb-0'>Auto Encontrado:</h1>
+                        </div>
+                    <div class='card-body text-success'>
                         <p class='mb-2'><strong>Pantente:</strong> <span class='text-dark'>".$autoElegido['Patente']."</span></p>
                         <p class='mb-2'><strong>Marca:</strong> <span class='text-dark'>".$autoElegido['Marca']."</span></p>
                         <p class='mb-2'><strong>Modelo:</strong> <span class='text-dark'>".$autoElegido['Modelo']."</span></p>
@@ -34,15 +37,3 @@ function mostrarAutoElegido (){
     }
     return $mesansaje;
 }
-include_once  __DIR__ ."/../vista/estructura/cabecera/incio.php";
-?>
-<div class="container mt-4 ">
-    <div class="row col-6 ">
-        <?php 
-            $men = mostrarAutoElegido();
-            echo $men;
-        ?>
-    </div>
-</div>
-<?php
-include_once  __DIR__ ."/../vista/estructura/pie/footer.php";

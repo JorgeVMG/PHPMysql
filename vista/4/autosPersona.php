@@ -1,6 +1,6 @@
 <?php 
 include "../estructura/cabecera/incio.php";
-include "../../action/accionListarPersonas.php";
+include "../../control/4/accionListarPersonas.php";
 
 ?>
     <div class="container col-6">

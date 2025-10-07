@@ -1,6 +1,6 @@
 <?php include "../estructura/cabecera/incio.php"; ?>
     <div id='form'>
-        <form id='formulario' name='from' method='get' action='../action/action.php'>
+        <form id='formulario' name='from' method='get' action='../../control/action/action.php'>
             <input type="hidden" name="tp" value="TP1">
             <input type="hidden" name="ejercicio" value="4">
             <h2>Ingresar sus Datos</h2>

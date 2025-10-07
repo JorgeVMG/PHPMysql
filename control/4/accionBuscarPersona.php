@@ -5,7 +5,7 @@ include_once __DIR__ . '/../control/controlPersona.php';
 function buscarPersonaModificar(){
     $method = $_SERVER['REQUEST_METHOD'];
     $data   = $method === 'POST' ? $_POST : $_GET;
-    $dni = $data["dniEcont"];
+    $dni = $data["DNI"];
     $p = new controlPersona();
     $personaEncot = $p->buscarPersona($dni);
     if($personaEncot != null){

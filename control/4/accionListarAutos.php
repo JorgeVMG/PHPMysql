@@ -1,6 +1,6 @@
 <?php 
-include_once __DIR__ . '/../control/controlAuto.php';
-include_once __DIR__ . '/../control/controlPersona.php';
+include_once 'controlAuto.php';
+include_once 'controlPersona.php';
 
 function mensajeListado(){
     $control = new controlAuto(); 
