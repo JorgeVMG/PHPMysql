@@ -1,5 +1,4 @@
 <?php
-include_once "conexion/baseDatos.php";
 class tablaPersona {
     private $nroDNI;
     private $apellido;

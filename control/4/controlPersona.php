@@ -1,6 +1,4 @@
 <?php 
-include_once __DIR__ . "/../../modelo/tablaPersona.php";
-include_once "controlAuto.php";
 class controlPersona{
     public function buscarPersona($dni){
         $lista = $this->listarPersonas();

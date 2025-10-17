@@ -1,7 +1,4 @@
 <?php
-include_once 'controlAuto.php';
-include_once 'controlPersona.php';
-
 function mostrarAutoElegido (){
     $method = $_SERVER['REQUEST_METHOD'];
     $data   = $method === 'POST' ? $_POST : $_GET;

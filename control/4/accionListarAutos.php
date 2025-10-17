@@ -1,7 +1,6 @@
 <?php 
-include_once 'controlAuto.php';
-include_once 'controlPersona.php';
 
+include_once('../../configuracion/configuracion.php');
 function mensajeListado(){
     $control = new controlAuto(); 
     $list = $control->listarAutos();

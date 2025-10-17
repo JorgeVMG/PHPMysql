@@ -1,6 +1,4 @@
 <?php
-include_once 'controlAuto.php';
-include_once 'controlPersona.php';
 function mostrarPersonas(){
     $p = new controlPersona();
     $list = $p->listarPersonas();

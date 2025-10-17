@@ -1,6 +1,4 @@
 <?php 
-
-include_once "conexion/baseDatos.php";
 class tablaAuto {
     private $patente;
     private $marca;

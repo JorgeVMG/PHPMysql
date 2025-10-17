@@ -21,21 +21,5 @@ function verEstructura($e){
     print_r($e);
     echo "</pre>"; 
 }
-spl_autoload_register(function($class_name) {
-    $directories = [
-        ROOT_PATH . 'modelo/',
-        ROOT_PATH . 'modelo/4/',
-        ROOT_PATH . 'modelo/conexion/',
-        ROOT_PATH . 'conexion/',
-    ];
-
-    foreach ($directories as $directory) {
-        $file = $directory . $class_name . '.php';
-        if (file_exists($file)) {
-            require_once $file;
-            return;
-        }
-    }
-});
 
 ?>

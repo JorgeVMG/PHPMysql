@@ -1,7 +1,4 @@
 <?php
-
-include_once __DIR__ . '/../control/controlAuto.php';
-include_once __DIR__ . '/../control/controlPersona.php';
 function buscarPersonaModificar(){
     $method = $_SERVER['REQUEST_METHOD'];
     $data   = $method === 'POST' ? $_POST : $_GET;

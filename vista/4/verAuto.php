@@ -1,5 +1,5 @@
 <?php
-    include_once "../../control/4/accionListarAutos.php";
+    include_once('../../configuracion/configuracion.php');
     include "../estructura/cabecera/incio.php";
     $rep = mensajeListado();
     echo $rep;
