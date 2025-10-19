@@ -1,5 +1,4 @@
 <?php
-include_once 'controlPersona.php';
 function agregarPersona(){
     $method = $_SERVER['REQUEST_METHOD'];
     $data   = $method === 'POST' ? $_POST : $_GET;
@@ -43,23 +42,3 @@ function agregarPersona(){
     }
     return $mensaje;
 }
-/*include_once  __DIR__ ."/../vista/estructura/cabecera/incio.php";
-?>
-<div class="container mt-4 ">
-    <div class="row col-6 ">
-        <?php 
-            session_start();
-            $men = agregarPersona();
-            if (isset($_SESSION['autoPendiente'])) {
-                header("Location: accionNuevoAuto.php");
-                exit;
-            }else{    
-                $men = agregarPersona();
-                echo $men;
-            }
-
-        ?>
-    </div>
-</div>
-<?php
-include_once  __DIR__ ."/../vista/estructura/pie/footer.php";*/

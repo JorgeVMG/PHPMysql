@@ -21,5 +21,23 @@ function verEstructura($e){
     print_r($e);
     echo "</pre>"; 
 }
+spl_autoload_register(function($class_name) {
+    $dirs = [
+        $_SESSION['ROOT'] . 'modelo/',
+        $_SESSION['ROOT'] . 'modelo/conexion/',
+        $_SESSION['ROOT'] . 'control/',
+        $_SESSION['ROOT'] . 'control/1/',
+        $_SESSION['ROOT'] . 'control/2/',
+        $_SESSION['ROOT'] . 'control/3/',
+        $_SESSION['ROOT'] . 'control/4/',
+    ];
 
+    foreach ($dirs as $dir) {
+        $path = $dir . $class_name . '.php';
+        if (file_exists($path)) {
+            require_once $path;
+            return;
+        }
+    }
+});
 ?>

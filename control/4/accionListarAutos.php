@@ -1,10 +1,8 @@
 <?php 
-
-include_once('../../configuracion/configuracion.php');
 function mensajeListado(){
     $control = new controlAuto(); 
     $list = $control->listarAutos();
-    $mensaje = "<div class='row justify-content-center'>
+    $mensaje = "<div class='row justify-content-center mb-4'>
                 <div class='col-8' >
                 <div class='card border-success shadow' style='background-color: rgba(144, 229, 144, 1)'>";
     $a = 0;

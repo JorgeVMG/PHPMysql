@@ -1,4 +1,3 @@
-<?php include "../estructura/cabecera/incio.php";?>
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-lg-6 col-md-8 col-sm-10">
@@ -29,5 +28,3 @@
         </div>
     </div>
 </div>
-
-<?php include "../estructura/pie/footer.php";?>

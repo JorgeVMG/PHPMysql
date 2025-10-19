@@ -1,17 +1,10 @@
-<?php include "../estructura/cabecera/incio.php";
-/*Crear una página “NuevaPersona.php” que contenga un formulario que permita solicitar todos
- los datos de una persona. Estos datos serán enviados a una página “accionNuevaPersona.php” que cargue
- un nuevo registro en la tabla persona de la base de datos. Se debe mostrar un mensaje que indique si se
- pudo o no cargar los datos de la persona. Utilizar css y validaciones javaScript cuando crea conveniente.
- Recordar usar la capa de control antes generada, no se puede acceder directamente a las clases del ORM 
- NroDni, Apellido, Nombre, fechaNac, Telefono, Domicilio.*/?>
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-lg-6 col-md-8 col-sm-10">
             <div class="card shadow-sm">
                 <div class="card-body">
                     <h1 class="h4 text-center mb-4">Ingresar Datos de la Nueva Persona</h1>
-                    <form class="needs-validation" novalidate action="../../control/action/action.php" method="post">
+                    <form class="needs-validation" novalidate action="control/action/action.php" method="post">
                         <div class="row mb-3">
                             <input type="hidden" name="tp" value="TP4">
                             <input type="hidden" name="ejercicio" value="4">
@@ -66,5 +59,3 @@
         </div>
     </div>
 </div>
-
-<?php include "../estructura/pie/footer.php";?>

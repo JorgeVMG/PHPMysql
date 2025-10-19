@@ -10,9 +10,9 @@ function mostrarPersonas(){
             $a++;
             $lisAut = $p->listadoAutosPersona($pers["NroDni"]);
             if(count($lisAut) != 0 ){
-                $urlAutos = "<p class='mb-2'><strong>Autos:</strong></p><a href='autosPersona.php?dni=".$pers["NroDni"]."' class='btn btn-primary'>Autos</a>";
+                $urlAutos = "<p class='mb-2'><strong>Autos: </strong></p><a href='?page=autosPersona&&dni=".$pers["NroDni"]."' class='btn btn-success'>Autos</a>";
             }else{
-                $urlAutos = "<p class='mb-2'><strong>Autos:<span class='text-dark'>No posee autos</span></p>";
+                $urlAutos = "<p class='mb-2'><strong>Autos: </strong><span class='text-dark'>No posee autos</span></p>";
             }
             $mensaje .= "<div class='card-header text-success'>
                             <h1 class='h4 mb-0'>Persona $a</h1>
@@ -45,9 +45,11 @@ function mostrarAutosPers(){
                     <div class='card-body text-success'>
                         <p class='mb-2'><strong>Pantente:</strong> <span class='text-dark'>".$aut['Patente']."</span></p>
                         <p class='mb-2'><strong>Marca:</strong> <span class='text-dark'>".$aut['Marca']."</span></p>
-                        <p class='mb-2'><strong>Modelo:</strong> <span class='text-dark'>".$aut['Modelo']."</span></p> 
+                        <p class='mb-2'><strong>Modelo:</strong> <span class='text-dark'>".$aut['Modelo']."</span></p>
                     </div>";
     }
-    $mensaje .= "<input type='button' value='Regresar' onclick='history.back()'>";
+    $mensaje .= "<div class='card-body text-success'>
+                        <input type='button' value='Regresar'class='btn btn-success' onclick='history.back()'> 
+                    </div>";
     return $mensaje;
 }

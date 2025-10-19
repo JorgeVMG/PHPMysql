@@ -25,10 +25,12 @@ function mostrarAutoElegido (){
                         <p class='mb-2'><strong>Marca:</strong> <span class='text-dark'>".$autoElegido['Marca']."</span></p>
                         <p class='mb-2'><strong>Modelo:</strong> <span class='text-dark'>".$autoElegido['Modelo']."</span></p>
                         <p class='mb-2'><strong>Dueño:</strong> <span class='text-dark'>".$duenio["Apellido"]." ".$duenio["Nombre"]."</span></p>
+                        <input type='button' value='volver' class='btn btn-success' onclick='history.back()'>
                     </div>";
         }else{
             $mesansaje = "<div class='card-body text-success'>
                             <p class='mb-2'>No se encontro el auto requerido</p>
+                            <input type='button' value='volver' class='btn btn-success' onclick='history.back()'>
                         </div>";
         }
     }

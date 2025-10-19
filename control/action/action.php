@@ -4,7 +4,6 @@ $data   = $method === 'POST' ? $_POST : $_GET;
 
 $tp = $data['tp'] ?? null;          
 $ej = $data['ejercicio'] ?? null;   
-
 switch ($tp) {
     case 'TP1':
         require_once '../1/controlFormularioTp1.php';
@@ -49,18 +48,16 @@ switch ($tp) {
     case 'TP4':
         switch ($ej) {
             case '2':
-                require_once '../4/accionBuscarAuto.php';
+                include_once(ROOT_PATH  . 'control/4/accionBuscarAuto.php');
                 $respuesta = mostrarAutoElegido();
-                session_start();
                 $_SESSION['mensaje'] = $respuesta;
-                header("Location: ../../vista/4/mensaje.php");
-                exit;
+                header("Location:  index.php?page=mensaje4");
+                exit();
             case '4':
-                require_once '../4/accionNuevaPersona.php';
-                $respuesta =agregarPersona();
-                session_start();
+                include_once(ROOT_PATH  . 'control/4/accionNuevaPersona.php');
+                $respuesta = agregarPersona();
                 $_SESSION['mensaje'] = $respuesta;
-                header("Location: ../../vista/4/mensaje.php");
+                header("Location:  index.php?page=mensaje4");
                 exit;
             case '5':
                 require_once "../4/accionNuevoAuto.php";

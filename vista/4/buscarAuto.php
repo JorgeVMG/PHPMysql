@@ -1,8 +1,7 @@
-<?php include "../estructura/cabecera/incio.php";?>
-    <div class="container">
+<div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6 mt-3 pb-3 border border-dark" >
-                <form class="needs-validation" novalidate action="../../control/action/action.php" method="post">
+                <form class="needs-validation" novalidate action="?page=action" method="post">
                     <div class="mb-4">
                         <h1 class="h4 mb-0 text-center" >Ingresar patente a buscar</h1>
                     </div>
@@ -19,4 +18,3 @@
             </div>
         </div>
     </div>
-<?php include "../estructura/pie/footer.php";?>

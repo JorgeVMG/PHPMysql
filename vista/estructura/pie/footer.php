@@ -1,11 +1,20 @@
-    <script src="../js/1/validacionFormularioTP1.js"></script>
-    <script src="../js/2/validacionFormularioTP2.js"></script>
-    <script src="../js/3/validacionFormularioTP3.js"></script>
-    <script src="../js/4/validacionFormularioTP4.js"></script>
+    <footer class="bg-dark text-white mt-auto py-3">
+        <div class="container text-center">
+            <p class="mb-1">
+                <strong>Legajo:</strong> XXX-XXXX
+            </p>
+            <p class="mb-0">
+                <strong>Correo:</strong> XXXXXXXXXX
+            </p>
+        </div>
+    </footer>
+    <script src="vista/js/1/validacionFormularioTP1.js"></script>
+    <script src="vista/js/2/validacionFormularioTP2.js"></script>
+    <script src="vista/js/3/validacionFormularioTP3.js"></script>
+    <script src="vista/js/4/validacionFormularioTP4.js"></script>
     <script>
             let tpInput = document.getElementsByName('tp')[0];
             let tp = tpInput.value;
-
             if (tp === 'TP1') {
                 document.addEventListener('DOMContentLoaded', function () {
                     let form = document.getElementById('formulario');

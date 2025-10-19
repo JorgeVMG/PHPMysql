@@ -7,8 +7,10 @@ function validFormul(event){
         resp = NuevaPersona();
     }else if(eje == "5"){
         resp = nuevoAuto(); 
-    }else{
+    }else if(eje == "6"){
         resp = cambioDuenio();
+    }else{
+        resp = validarDNI();
     }
     if(!resp){
         event.preventDefault()

@@ -1,4 +1,3 @@
-<?php include "../estructura/cabecera/incio.php"; ?>
 <div id="form" class="form2">
     <form id="formulario" name="form" method="get" action="../../control/action/action.php">
         <input type="hidden" name="tp" value="TP1">
@@ -31,5 +30,3 @@
     </form>
     
 </div>
-
-<?php include "../estructura/pie/footer.php"; ?>
