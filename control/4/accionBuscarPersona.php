@@ -8,13 +8,15 @@ function buscarPersonaModificar(){
     if($personaEncot != null){
         $mensaje = "<div class='container mt-5'>
     <div class='row justify-content-center'>
-        <div class='col-lg-6 col-md-8 col-sm-10'>
+        <div class='col-lg-10 col-md-8 col-sm-10'>
             <div class='card shadow-sm'>
                 <div class='card-body'>
                     <h1 class='h4 text-center mb-4'>Persona Encontrada</h1>
                     <h1 class='h4 text-center mb-4'>Modificacion de Datos</h1>
-                    <form class='needs-validation' novalidate action='ActualizarDatosPersona.php' method='post'>
+                    <form class='needs-validation' novalidate action='?page=action' method='post'>
                         <div class='row mb-3'>
+                            <input type='hidden' name='tp' value='TP4'>
+                            <input type='hidden' name='ejercicio' value='7.A'>
                             <input type='hidden' name='dniEcont' value='$dni'>
                             <div class='col-md-6 mb-3'>
 
@@ -70,21 +72,11 @@ function buscarPersonaModificar(){
 </div>";
     }else{
          $mensaje = "<div class='card-header text-warning'>
-            <h1 class='h4 mb-0'>La persona Ingresa no esta ingresada</h1>
+            <h1 class='h4 mb-0'>La persona Ingresa no fue encontrada</h1>
         </div>
         <div class='card-body'>
-            <a href='../vista/4/nuevaPersona.php' class='btn btn-primary'>Cargar persona</a>
+            <a href='?page=TP4Ej7' class='btn btn-primary'>Cargar persona</a>
         </div>";
     }
     return $mensaje;
 }
-
-include_once  __DIR__ ."/../vista/estructura/cabecera/incio.php";
-?>
-<?php 
-    $men = buscarPersonaModificar();
-    echo $men;
-?>
-    
-<?php
-include_once  __DIR__ ."/../vista/estructura/pie/footer.php";

@@ -1,7 +1,4 @@
 <?php
-include_once 'controlAuto.php';
-include_once 'controlPersona.php';
-session_start();
 function agregarAuto() {
     if(isset($_SESSION["autoPendiente"])){
         $data = $_SESSION["autoPendiente"];
@@ -29,10 +26,10 @@ function agregarAuto() {
         }else{
             $mensaje = "<div class='card-header text-success'>
                     <h1 class='h4 mb-0'>El auto no fue ingresado porque ya existe en la base de datos</h1>
-                    <h3 class='h5 mb-0'>Desea volver a cargarlo?</h3>
+                    <h3 class='h5 mb-0'>volver a cargar el auto</h3>
                 </div>
                 <div class='card-body'>
-                    <a href='NuevoAuto.php' class='btn btn-primary'>Cargar auto</a>
+                    <a href='?page=TP4Ej5' class='btn btn-success'>volver a cargar</a>
                 </div>";
         }
         
@@ -43,21 +40,8 @@ function agregarAuto() {
             <h3 class='h5 mb-0'>Desea cargar una nueva persona</h3>
         </div>
         <div class='card-body'>
-            <a href='../4/nuevaPersona.php' class='btn btn-primary'>Cargar persona</a>
+            <a href='?page=TP4Ej4' class='btn btn-primary'>Cargar persona</a>
         </div>";
     }
     return $mensaje;
 }
-/*
-include_once  __DIR__ ."/../vista/estructura/cabecera/incio.php";
-?>
-<div class="container mt-4 ">
-    <div class="row col-6 ">
-        <?php 
-            $men = agregarAuto();
-            echo $men;
-        ?>
-    </div>
-</div>
-<?php
-include_once  __DIR__ ."/../vista/estructura/pie/footer.php";*/

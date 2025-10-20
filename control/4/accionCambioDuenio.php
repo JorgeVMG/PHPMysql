@@ -32,16 +32,3 @@ function cambioDuenio(){
     }
     return $mensaje;
 }
-
-include_once  __DIR__ ."/../vista/estructura/cabecera/incio.php";
-?>
-<div class="container mt-4 ">
-    <div class="row col-6 ">
-        <?php 
-            $men = cambioDuenio();
-            echo $men;
-        ?>
-    </div>
-</div>
-<?php
-include_once  __DIR__ ."/../vista/estructura/pie/footer.php";

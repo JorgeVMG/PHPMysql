@@ -23,13 +23,13 @@ function verEstructura($e){
 }
 spl_autoload_register(function($class_name) {
     $dirs = [
-        $_SESSION['ROOT'] . 'modelo/',
-        $_SESSION['ROOT'] . 'modelo/conexion/',
-        $_SESSION['ROOT'] . 'control/',
-        $_SESSION['ROOT'] . 'control/1/',
-        $_SESSION['ROOT'] . 'control/2/',
-        $_SESSION['ROOT'] . 'control/3/',
-        $_SESSION['ROOT'] . 'control/4/',
+        ROOT_PATH . 'modelo/',
+        ROOT_PATH . 'modelo/conexion/',
+        ROOT_PATH . 'control/',
+        ROOT_PATH . 'control/1/',
+        ROOT_PATH . 'control/2/',
+        ROOT_PATH . 'control/3/',
+        ROOT_PATH . 'control/4/',
     ];
 
     foreach ($dirs as $dir) {
@@ -40,4 +40,3 @@ spl_autoload_register(function($class_name) {
         }
     }
 });
-?>

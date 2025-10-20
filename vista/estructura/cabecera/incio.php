@@ -9,4 +9,4 @@
     <link rel="stylesheet" href="/PHPMYSQL/vista/css/personalizado/styleFormularios.css">
     <link rel="stylesheet" href="/PHPMYSQL/vista/css/personalizado/styleMensaje.css">
 </head>
-<body class="bg-light d-flex flex-column min-vh-100">
+<body class="bg-light d-flex flex-column min-vh-100" >

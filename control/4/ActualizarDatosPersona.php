@@ -1,8 +1,4 @@
 <?php
-
-include_once __DIR__ . '/../control/controlAuto.php';
-include_once __DIR__ . '/../control/controlPersona.php';
-
 function ActualizarDatosPersona(){
     $method = $_SERVER['REQUEST_METHOD'];
     $data   = $method === 'POST' ? $_POST : $_GET;
@@ -20,7 +16,7 @@ function ActualizarDatosPersona(){
                 </div>
                 <div class='card-body text-success'>
                             <p class='mb-2'><strong>DNI:</strong> <span class='text-dark'>".$dni."</span></p> 
-                            <p class='mb-2'><strong>Nombre Y apellido:</strong> <span class='text-dark'>".$data["apellido"]." ".$data["nombre"]."</span></p>
+                            <p class='mb-2'><strong>Apellido y Nombre:</strong> <span class='text-dark'>".$data["apellido"]." ".$data["nombre"]."</span></p>
                             <p class='mb-2'><strong>Fecha Nacimiento:</strong> <span class='text-dark'>".$data["fechaNacimiento"]."</span></p>
                             <p class='mb-2'><strong>Telefono:</strong> <span class='text-dark'>".$data["telefono"]."</span></p> 
                             <p class='mb-2'><strong>Domicilio:</strong> <span class='text-dark'>".$data["domicilio"]."</span></p>  
@@ -38,16 +34,3 @@ function ActualizarDatosPersona(){
     }
     return $mensaje;
 }
-
-include_once  __DIR__ ."/../vista/estructura/cabecera/incio.php";
-?>
-<div class="container mt-4 ">
-    <div class="row col-6 ">
-        <?php 
-            $men = ActualizarDatosPersona();
-            echo $men;
-        ?>
-    </div>
-</div>
-<?php
-include_once  __DIR__ ."/../vista/estructura/pie/footer.php";
