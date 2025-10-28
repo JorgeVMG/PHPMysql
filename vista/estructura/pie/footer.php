@@ -1,10 +1,10 @@
     <footer class="bg-dark text-white mt-auto py-3">
         <div class="container text-center">
             <p class="mb-1">
-                <strong>Legajo:</strong> XXX-XXXX
+                <strong>Legajo:</strong> FAI-4460
             </p>
             <p class="mb-0">
-                <strong>Correo:</strong> XXXXXXXXXX
+                <strong>Correo:</strong> musicag230204@gmail.com
             </p>
         </div>
     </footer>

@@ -1,7 +1,5 @@
 <?php
-    session_start();
     $mensaje = $_SESSION['mensaje'] ?? "<h3>No hay mensaje para mostrar</h3>";
-    include "../estructura/cabecera/incio.php";
         echo "<div class='presentacion'>
         <div class='respuesta'>
             <h2>Resultado 3</h2> 
@@ -9,6 +7,5 @@
             <input type='button' value='Regresar' onclick='history.back()'>
         </div>
     </div>";
-    include "../estructura/pie/footer.php";
 ?>
     

@@ -4,7 +4,7 @@
             <div class="card-body text-center p-5">
                 <h1 class="fw-bold text-primary mb-3">Programación Dinámica</h1>
                 <h4 class="text-secondary mb-4">
-                    Alumno: <strong class="text-dark">XXXXXXXXX</strong>
+                    Alumno: <strong class="text-dark">Jorge Victor Manuel Gonzalez</strong>
                 </h4>
 
                 <a href="?page=home" class="btn btn-primary btn-lg rounded-pill px-4">

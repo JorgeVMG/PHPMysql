@@ -1,5 +1,5 @@
 <div class="container">
-    <form action="../../control/action/action.php" novalidate class="row g-3 needs-validation border border-dark mt-0 pb-3 mb-3" id="form4" method="post">
+    <form action="?page=action" novalidate class="row g-3 needs-validation border border-dark pb-3" id="form4" method="post">
         <input type="hidden" name="tp" value="TP2">
         <input type="hidden" name="ejercicio" value="4">
         <div class="col-12 ">

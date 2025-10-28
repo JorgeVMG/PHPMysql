@@ -6,40 +6,38 @@ $tp = $data['tp'] ?? null;
 $ej = $data['ejercicio'] ?? null;   
 switch ($tp) {
     case 'TP1':
-        require_once '../1/controlFormularioTp1.php';
+        require_once (ROOT_PATH . 'control/1/controlFormularioTp1.php');
         $controller = new controlFormulario();
         $func = "formulario".$ej;       
         $respuesta = $controller->$func($data);
-        session_start();
         $_SESSION['mensaje'] = $respuesta;
-
-        header("Location: ../../vista/1/mensaje.php");
-        exit;
+        header("Location:  index.php?page=mensaje1");
+        exit();
 
     case 'TP2':
-        require_once '../2/controlFormularioTp2.php';
+        require_once (ROOT_PATH . 'control/2/controlFormularioTp2.php');
         $controller = new controlFormulario();
         $func = "formulario".$ej;
         $respuesta = $controller->$func($data);
         $_SESSION['mensaje'] = $respuesta;
         if($ej == "4"){
-            header("Location: ../../vista/2/mensajeTp2F4.php");
+            header("Location:  index.php?page=mensaje2F4");
         }else{
-            header("Location: ../../vista/2/mensajeTp2.php");
+            header("Location:  index.php?page=mensaje2");
         }
         
         exit;
 
     case 'TP3':
-        require_once '../3/controlFormularioTp3.php';
+        require_once (ROOT_PATH . 'control/3/controlFormularioTp3.php');
         $controller = new controlFormulario();
         $func = "formulario".$ej;       
         $respuesta = $controller->$func($data);
         $_SESSION['mensaje'] = $respuesta;
         if($ej == "3"){
-            header("Location: ../../vista/3/mensajeTp3F3.php");
+            header("Location:  index.php?page=mensaje3F3");
         }else{
-            header("Location: ../../vista/3/mensaje.php");
+            header("Location:  index.php?page=mensaje3");
         }
         
         exit;

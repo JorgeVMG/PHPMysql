@@ -1,7 +1,7 @@
 <?php
 include_once('configuracion/configuracion.php');
 
-$page = $_GET['page'] ?? 'presentacion';
+$page = $_GET['page'] ?? ($_GET['submit'] ? 'action' : 'presentacion');
 switch ($page) {
 
     // --- TP1 ---
@@ -32,7 +32,9 @@ switch ($page) {
     case "TP1Ej8":
         $url = 'vista/1/formulario8.php';
         break;
-
+    case "mensaje1":
+        $url = 'vista/1/mensaje.php';
+        break;
     // --- TP2 ---
     case "TP2Ej1":
         $url = 'vista/2/formulario1.php';
@@ -43,7 +45,12 @@ switch ($page) {
     case "TP2Ej4":
         $url = 'vista/2/formulario4.php';
         break;
-
+    case "mensaje2":
+        $url = 'vista/2/mensajeTp2.php';
+        break;
+    case "mensaje2F4":
+        $url = 'vista/2/mensajeTp2F4.php';
+        break;
     // --- TP3 ---
     case "TP3Ej1":
         $url = 'vista/3/formulario1.php';
@@ -54,7 +61,12 @@ switch ($page) {
     case "TP3Ej3":
         $url = 'vista/3/formulario3.php';
         break;
-
+    case "mensaje3":
+        $url = 'vista/3/mensajeTp3.php';
+        break;
+    case "mensaje3F3":
+        $url = 'vista/3/mensajeTp3F3.php';
+        break;
     // --- TP4 ---
     case "TP4Ej1":
         include_once($_SESSION['ROOT'] . 'control/4/accionListarAutos.php');

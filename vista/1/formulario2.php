@@ -1,5 +1,5 @@
 <div id="form" class="form2">
-    <form id="formulario" name="form" method="get" action="../../control/action/action.php">
+    <form id="formulario" name="form" method="get" action="?page=action">
         <input type="hidden" name="tp" value="TP1">
         <input type="hidden" name="ejercicio" value="2">
         <h2>ingresar horas de clases</h2>

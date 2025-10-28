@@ -32,7 +32,7 @@ class controlFormulario{
             $mensaje .= "No se pudo subir el archivo";
         } else {
             if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-                $rutaWeb = "uploads/" . $nameFile;
+                $rutaWeb = "vista/3/uploads/" . $nameFile;
                 $mensaje .= "El archivo se subió correctamente. <a href='" . htmlspecialchars($rutaWeb, ENT_QUOTES) . "' target='_blank'>Abrir archivo</a>";
             }else{
                 $mensaje .= "No se pudo mover el archivo al destino final";

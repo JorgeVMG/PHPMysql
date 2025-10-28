@@ -1,5 +1,5 @@
 <div id="form">
-  <form id="formulario" name="form" method="post" action="control/action/action.php">
+  <form id="formulario" name="form" method="post" action="?page=action">
     <input type="hidden" name="tp" value="TP1">
     <input type="hidden" name="ejercicio" value="1">
     <h2>Ingresar un Numero</h2>
